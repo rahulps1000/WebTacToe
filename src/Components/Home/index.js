@@ -25,7 +25,7 @@ const Home = ({ socket }) => {
 
   const getName = () => {
     var name = localStorage.getItem("name");
-    return name ? name : "";
+    return name ?? "Player" + Math.floor(Math.random() * 100);
   };
 
   const createRoom = () => {
