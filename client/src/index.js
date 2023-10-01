@@ -9,8 +9,15 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+let serverUrl;
 
-const socket = io("http://localhost:5000");
+if (process.env.REACT_APP_SERVER_URL) {
+  serverUrl = process.env.REACT_APP_SERVER_URL;
+} else {
+  serverUrl = "http://localhost:5000";
+}
+
+const socket = io(serverUrl);
 
 root.render(
   <React.StrictMode>
