@@ -17,7 +17,7 @@ var games = {};
 var origins = [
   "http://localhost:3000",
   "https://admin.socket.io",
-  "https://webtactoe.vercel.app/",
+  "https://webtactoe.vercel.app",
 ];
 
 if (process.env.REACT_APP_UI_URL) {
