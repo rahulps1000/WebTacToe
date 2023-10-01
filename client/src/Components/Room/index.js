@@ -18,7 +18,7 @@ const Room = ({ socket }) => {
 
   const getName = () => {
     var name = localStorage.getItem("name");
-    return name ? name : socket.id;
+    return name ?? "Player" + Math.floor(Math.random() * 100);
   };
 
   const showError = (msg) => {
