@@ -14,13 +14,19 @@ const server = http.createServer(app);
 
 var games = {};
 
+var origins = [
+  "http://localhost:3000",
+  "https://admin.socket.io",
+  "https://webtactoe.vercel.app",
+];
+
+if (process.env.REACT_APP_UI_URL) {
+  origins.push(process.env.REACT_APP_UI_URL);
+}
+
 const io = new Server(server, {
   cors: {
-    origin: [
-      "http://localhost:3000",
-      "https://admin.socket.io",
-      process.env.REACT_APP_UI_URL,
-    ],
+    origin: origins,
     methods: ["GET", "POST"],
     credentials: true,
   },
