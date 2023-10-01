@@ -19,6 +19,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:3000",
       "https://admin.socket.io",
+      "https://webtactoe.vercel.app/",
       process.env.REACT_APP_UI_URL,
     ],
     methods: ["GET", "POST"],
