@@ -16,7 +16,11 @@ var games = {};
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://admin.socket.io"],
+    origin: [
+      "http://localhost:3000",
+      "https://admin.socket.io",
+      process.env.REACT_APP_UI_URL,
+    ],
     methods: ["GET", "POST"],
     credentials: true,
   },
