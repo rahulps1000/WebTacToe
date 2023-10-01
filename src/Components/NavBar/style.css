@@ -1,0 +1,26 @@
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar .logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    width: 40px;
+    transform: rotate(-15deg);
+}
+
+.navbar .logo .text {
+    font-family: 'ShadowHand';
+    color: white;
+    font-size: 50px;
+}

@@ -1,0 +1,25 @@
+.box {
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1;
+    border: 3px solid #303A52;
+    background-color: #596174;
+    cursor: pointer;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.board {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}

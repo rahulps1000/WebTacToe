@@ -1,0 +1,9 @@
+.room .game {
+    display: flex;
+}
+
+@media only screen and (max-width: 640px) {
+    .room .game {
+        flex-direction: column;
+    }
+}

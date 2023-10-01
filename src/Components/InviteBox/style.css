@@ -1,0 +1,27 @@
+.invite_box {
+    color: #fff;
+    padding: 20px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.invite_box .room_code {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    margin: 10px 0 0 0;
+}
+
+.invite_box .room_code h2 {
+    padding: 0 10px;
+}
+
+.invite_box .room_code button {
+    background-color: #fff;
+    color: var(--bg);
+    padding: 3px 8px;
+    cursor: pointer;
+    border: none;
+}
