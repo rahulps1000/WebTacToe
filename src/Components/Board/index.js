@@ -49,14 +49,17 @@ const Board = ({ socket, roomId, update }) => {
   useEffect(() => {
     socket.emit("startGame", roomId);
     socket.on("startGame", (game) => {
+      let temp;
       if (game.admin === socket.id) {
         setAdmin(true);
+        temp = { admin: game.names.admin + " (You)", co: game.names.co };
       } else {
         setAdmin(false);
+        temp = { admin: game.names.admin, co: game.names.co + " (You)" };
       }
       setData(game.board);
       setCount(game.player);
-      update.name(game.names);
+      update.name(temp);
       update.score(game.score);
     });
     socket.on("move", () => {
