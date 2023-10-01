@@ -1,0 +1,37 @@
+.resultbox {
+    color: #fff;
+    margin: 0 50px;
+    background-color: #596174;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resultbox h1 {
+    margin-bottom: 20px;
+}
+
+.resultbox table {
+    width: 100%;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.resultbox table thead {
+    font-size: 22px;
+}
+
+.resultbox table tbody {
+    font-size: 20px;
+}
+
+.resultbox table tbody tr:first-child{
+    text-overflow: ellipsis;
+    width: 150px;
+    overflow: hidden;
+}
